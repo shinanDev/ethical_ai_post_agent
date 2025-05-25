@@ -5,11 +5,6 @@ Ein Python-basierter Agent, der auf Basis kuratierter YAML-Themen Thought-Leader
 
 ---
 
-![Demo Animation](docs/demo.gif)  
-*Automatisch generierter Beitrag durch den ethical_ai_post_agent.*
-
----
-
 ## Highlights
 
 ✅ YAML-gesteuertes Topic-Management  
@@ -44,7 +39,7 @@ Das folgende GIF zeigt, wie ein YAML-Thema in Markdown-Text umgewandelt und loka
 
 ---
 
-## 🎯 Goals
+## Goals
 - Raise awareness for bias in AI
 - Automate LinkedIn posts with YAML prompts
 - Generate posts with GPT-4 via OpenAI API
@@ -52,7 +47,22 @@ Das folgende GIF zeigt, wie ein YAML-Thema in Markdown-Text umgewandelt und loka
 
 ---
 
-## 🚀 Features
+## Motivation & Inspiration
+
+In einer Welt, in der Künstliche Intelligenz immer häufiger Entscheidungen trifft, ist es entscheidend, die **ethischen Fragen** nicht zu übersehen.
+
+Dieses Projekt entstand aus dem Wunsch, einen Beitrag zu leisten für:
+
+- **Mehr Sichtbarkeit** für Bias & Fairness in LLMs  
+- **Automatisierte Bildung** über Themen, die oft im Schatten technischer Euphorie stehen  
+- **Verantwortungsvollere KI-Systeme**, die Menschen einschließen statt ausschließen  
+
+Der `ethical_ai_post_agent` ist mein Weg, mit Technologie **Aufklärung, Reflexion und Veränderung** in die Feeds zu bringen.
+
+🧠✨ Let's build AI with **intention** – not just with instructions.
+
+---
+## Features
 - Parses topic YAML from `data/topics.yaml`
 - Uses `gpt-3.5-turbo` or `gpt-4` to generate posts
 - Creates `.md` files inside `/posts`
@@ -62,7 +72,7 @@ Das folgende GIF zeigt, wie ein YAML-Thema in Markdown-Text umgewandelt und loka
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 ethical_ai_post_agent/
 │
 ├── data/                # YAML input topics
@@ -78,7 +88,7 @@ ethical_ai_post_agent/
 
 ---
 
-## 📋 To Do
+## To Do
 - [x] Connect GPT-4 for generation
 - [ ] Add LinkedIn scheduling (via API)
 - [ ] Integrate DALL·E for visual content
@@ -87,14 +97,14 @@ ethical_ai_post_agent/
 
 ---
 
-## ⚠️ License
+## License
 
 MIT License – Use responsibly.  
 Don't build disinfo-bots 🙏
 
 ---
 
-## 🧑‍🚀 Maintainer
+## Maintainer
 
 Made with ❤️ by [shinan.dev](https://github.com/shinanDev)  
 GPG-signed & committed.  
