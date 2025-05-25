@@ -38,7 +38,8 @@ Das folgende GIF zeigt, wie ein YAML-Thema in Markdown-Text umgewandelt und loka
 
 📍 *Ablageort: `posts/` + Logs in `logs/`*
 
-![Demo Animation](docs/ethical_ai_post_agent_demo.gif)
+![Demo Animation](docs/demo.gif)
+
 *Automatisch generierter Beitrag durch den `ethical_ai_post_agent`.*
 
 ---
