@@ -1,41 +1,42 @@
 # ethical_ai_post_agent
 
-Automatisierter LinkedIn-Bot für Ethical AI Content  
-Ein Python-basierter Agent, der auf Basis kuratierter YAML-Themen Thought-Leadership-Posts über Bias, Fairness und Diversity in LLMs erstellt, mit GPT-4 generiert und als Markdown speichert.
+💡 Bias & Diversity in LLMs – Fully Automated LinkedIn Content Agent
+
+This Python-based agent generates, schedules, and logs thought-leadership posts on ethical AI topics (e.g., bias, fairness, transparency) using GPT-4 and YAML-based topic files.
 
 ---
 
 ## Highlights
 
-✅ YAML-gesteuertes Topic-Management  
-✅ GPT-4 Content-Generierung über OpenAI API  
-✅ Markdown-Output + Logging  
-✅ Clean Code & CLI-freundlich  
-✅ Bereit für LinkedIn-Scheduling & DALL·E Erweiterung
+✅ YAML-driven topic management  
+✅ GPT-4 content generation via OpenAI API  
+✅ Markdown output + logging  
+✅ Clean code & CLI-friendly  
+✅ Ready for LinkedIn scheduling & DALL·E extension
 
 ---
 
 ## Tech Stack
 
-| Tool            | Einsatzgebiet               |
-|-----------------|-----------------------------|
-| Python 3.13     | Core Language               |
-| OpenAI API      | Textgenerierung             |
-| PyYAML          | YAML-Einbindung             |
-| Schedule        | Zeitbasierte Ausführung     |
-| dotenv          | API-Schlüssel-Handling      |
+| Tool        | Purpose                         |
+|-------------|----------------------------------|
+| Python 3.13 | Core language                    |
+| OpenAI API  | Text generation                  |
+| PyYAML      | YAML integration                 |
+| Schedule    | Timed task execution             |
+| dotenv      | API key handling                 |
 
 ---
 
 ## Demo
 
-Das folgende GIF zeigt, wie ein YAML-Thema in Markdown-Text umgewandelt und lokal gespeichert wird.
+The following GIF demonstrates how a YAML-based topic is converted into Markdown text and saved locally.
 
-📍 *Ablageort: `posts/` + Logs in `logs/`*
+📍 *Output directory: `posts/` + logs in `logs/`*
 
 ![Demo Animation](docs/demo.gif)
 
-*Automatisch generierter Beitrag durch den `ethical_ai_post_agent`.*
+*Automatically generated post by the `ethical_ai_post_agent`.*
 
 ---
 
@@ -49,17 +50,17 @@ Das folgende GIF zeigt, wie ein YAML-Thema in Markdown-Text umgewandelt und loka
 
 ## Motivation & Inspiration
 
-In einer Welt, in der Künstliche Intelligenz immer häufiger Entscheidungen trifft, ist es entscheidend, die **ethischen Fragen** nicht zu übersehen.
+As artificial intelligence increasingly makes critical decisions, it's essential not to overlook the **ethical questions**.
 
-Dieses Projekt entstand aus dem Wunsch, einen Beitrag zu leisten für:
+This project was born from a desire to contribute by:
 
-- **Mehr Sichtbarkeit** für Bias & Fairness in LLMs  
-- **Automatisierte Bildung** über Themen, die oft im Schatten technischer Euphorie stehen  
-- **Verantwortungsvollere KI-Systeme**, die Menschen einschließen statt ausschließen  
+- **Raising visibility** for bias & fairness in LLMs  
+- **Automating education** on topics that often stay in the shadow of technical hype  
+- **Promoting responsible AI systems** that include rather than exclude people
 
-Der `ethical_ai_post_agent` ist mein Weg, mit Technologie **Aufklärung, Reflexion und Veränderung** in die Feeds zu bringen.
+`ethical_ai_post_agent` is my way of using technology to bring **awareness, reflection, and change** into the feed.
 
-🧠 Let's build AI with **intention** – not just with instructions.
+🧠 Let’s build AI with **intention** — not just with instructions.
 
 ---
 ## Features
@@ -73,17 +74,16 @@ Der `ethical_ai_post_agent` ist mein Weg, mit Technologie **Aufklärung, Reflexi
 ---
 
 ## Project Structure
-ethical_ai_post_agent/
-│
-├── data/                # YAML input topics
-│   └── topics.yaml
-│
-├── posts/               # Generated posts (.md)
-├── logs/                # Logs (optional)
-├── main.py              # Agent logic
-├── config.yaml          # Parameters & settings
-├── test_connection.py   # Optional API test script
-├── .env                 # API key (excluded via .gitignore)
+
+ethical_ai_post_agent/  
+├── data/                  # YAML input topics  
+│   └── topics.yaml  
+├── posts/                 # Generated posts (.md)  
+├── logs/                  # Logs (optional)  
+├── main.py                # Agent logic  
+├── config.yaml            # Parameters & settings  
+├── test_connection.py     # Optional API test script  
+├── .env                   # API key (excluded via .gitignore)  
 └── README.md
 
 ---
