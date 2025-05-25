@@ -1,0 +1,6 @@
+__pycache__/
+.env
+images/
+logs/
+
+test_connection.py
