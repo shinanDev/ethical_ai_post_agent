@@ -1,6 +1,6 @@
 # ethical_ai_post_agent
 
-🚀 Automatisierter LinkedIn-Bot für Ethical AI Content  
+Automatisierter LinkedIn-Bot für Ethical AI Content  
 Ein Python-basierter Agent, der auf Basis kuratierter YAML-Themen Thought-Leadership-Posts über Bias, Fairness und Diversity in LLMs erstellt, mit GPT-4 generiert und als Markdown speichert.
 
 ---
@@ -59,7 +59,7 @@ Dieses Projekt entstand aus dem Wunsch, einen Beitrag zu leisten für:
 
 Der `ethical_ai_post_agent` ist mein Weg, mit Technologie **Aufklärung, Reflexion und Veränderung** in die Feeds zu bringen.
 
-🧠✨ Let's build AI with **intention** – not just with instructions.
+🧠 Let's build AI with **intention** – not just with instructions.
 
 ---
 ## Features
@@ -108,4 +108,4 @@ Don't build disinfo-bots 🙏
 
 Made with ❤️ by [shinan.dev](https://github.com/shinanDev)  
 GPG-signed & committed.  
-Ambassador for Ethical AI ✨
+Ambassador for Ethical AI
