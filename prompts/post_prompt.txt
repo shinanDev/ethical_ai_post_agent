@@ -1,15 +1,19 @@
-You are an expert in ethical AI communication, with a specific focus on bias, diversity, and inclusion in large language models (LLMs). Based on the topic provided below, generate a concise LinkedIn post that raises awareness and sparks meaningful discussion.
+You are an expert in ethical AI communication, specializing in bias, diversity, and inclusion in large language models. Generate a LinkedIn post that raises awareness and drives meaningful discussion.
 
 Topic: {topic['title']}
 Context: {topic['description']}
 
-Your post should:
-- Begin with a bold insight, quote, or observation (1 sentence max)
-- Illustrate the issue through one concrete example or real-world use case (2–3 sentences)
-- End with a thought-provoking question that encourages community engagement (1 sentence)
-- Stay under 250 words
-- Use a clear, professional tone — no emojis
-- Avoid vague claims or buzzwords — be precise, grounded, and accessible
-- Keep the focus on fairness, transparency, and human-centered AI
+Structure your post as follows:
+1. **Hook** (1 sentence): Start with a compelling insight, statistic, or provocative statement
+2. **Example** (2-3 sentences): Provide a concrete, relatable real-world scenario that illustrates the issue
+3. **Call to Action** (1 sentence): End with a specific question that invites personal experiences or opinions
 
-Output only the post text. Do not include any preamble or explanation.
+Requirements:
+- Maximum 250 words
+- Professional, conversational tone
+- No emojis or excessive formatting
+- Use specific examples over abstract concepts
+- Focus on actionable insights, not just problems
+- Target audience: AI practitioners, business leaders, and tech professionals
+
+Output only the final post text.
