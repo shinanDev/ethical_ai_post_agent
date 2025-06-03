@@ -3,7 +3,7 @@ import requests
 client_id = "782388lsq8ewaf"
 client_secret = "WPL_AP1.pfA8DEEG31hKHJG7.+l1+ng=="
 redirect_uri = "http://localhost:3000/callback"
-authorization_code = "AQRncWCnmNlZwqR8z7OPIFOhKiV29mhFWe53XgtPIpDGAkaQbY8ptex_JZzt4-gGRwlZa3avMDmd8FagtziZJeJNLp42-vM_Yox98B2rDr8VEqu4wZm0xkEgDMzIfewq1iYvpCBzqLXUU-arMPSR4adDCyY2JExm1pEIU8E6xNtsHkrByrNFQHZsHk-_bNOOEXeDn9p4O4EhZ8yWM6I"
+authorization_code = "AQT1-QFTGcE-dyL6zHTfJZ5zcwgu4l6L0bR1gkY-uAZKsJrOPXwZcvsteovxpphSDOmmb6K1BorvXGinMLuRiMuzzU_ky-AbUUOpa-jMrYRFzD-T6K3Wx0KM7LEzq3KZ9g5v8zHOfFDVYYkZV89sL2XmD4VfKvfUucOGqrQJ-T83oa0tX9zYgCwG27RvA8lHarD_biPjFSfKWGdXjKc"
 
 token_url = "https://www.linkedin.com/oauth/v2/accessToken"
 

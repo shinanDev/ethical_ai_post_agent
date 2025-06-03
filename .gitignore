@@ -2,5 +2,4 @@ __pycache__/
 .env
 images/
 logs/
-
-test_connection.py
+test_connection.py.env
