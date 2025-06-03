@@ -48,12 +48,11 @@ It was built to reduce repetitive content creation for LinkedIn while maintainin
 
 ## Demo
 
-The following GIF demonstrates the full pipeline in action:  
-From selecting a YAML topic to generating a GPT-4-based post and saving it as Markdown in the output folder.
+> This short demo shows the agent running in a terminal, processing topics from a YAML file, sending prompts to GPT-4, and saving the resulting LinkedIn posts as Markdown files.
 
 ![Demo Animation](docs/demo.gif)
 
-*Automatically generated post by the `ethical_ai_post_agent`.*
+Each post is automatically saved to the `posts/` directory and logged in `logs/agent.log`.
 
 ---
 
