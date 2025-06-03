@@ -1,5 +1,4 @@
-openai~=1.78.0
-python-dotenv~=1.1.0
-pyyaml~=6.0.2
-schedule
-python-slugify~=8.0.4
+openai>=1.0.0
+pyyaml>=6.0
+python-slugify>=8.0
+python-dotenv>=1.0.0

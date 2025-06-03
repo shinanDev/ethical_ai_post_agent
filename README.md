@@ -1,38 +1,55 @@
 # ethical_ai_post_agent
 
-💡 Bias & Diversity in LLMs – Fully Automated LinkedIn Content Agent
+The **Ethical AI Post Agent** is an automated content generation tool designed to post professional, well-crafted updates on topics such as AI Ethics, Bias, Diversity, Fairness, and Responsible AI.
 
-This Python-based agent generates, schedules, and logs thought-leadership posts on ethical AI topics (e.g., bias, fairness, transparency) using GPT-4 and YAML-based topic files.
+It was built to reduce repetitive content creation for LinkedIn while maintaining high-quality standards and raising awareness on key issues in artificial intelligence.
 
 ---
 
-## Highlights
+## Key Features
 
-✅ YAML-driven topic management  
-✅ GPT-4 content generation via OpenAI API  
-✅ Markdown output + logging  
-✅ Clean code & CLI-friendly  
-✅ Ready for LinkedIn scheduling & DALL·E extension
+- Generates posts from curated `topics.yaml` entries
+- Uses a modular prompt system (`prompt.txt`)
+- Supports fully automated scheduling via cron jobs
+- Seamlessly integrates with OpenAI API
+- Posts are:
+  - Under 250 words
+  - Written in a clear, professional tone
+  - Focused on awareness and constructive discourse
+  - Free of emojis and fluff
+
+---
+
+## Current Capabilities
+
+✅ YAML-based topic curation  
+✅ Dynamic prompt processing  
+✅ Autonomous post generation  
+✅ OpenAI API integration fully functional  
+✅ Scheduled posting every Wednesday at 13:00  
+⏳ LinkedIn API integration in progress  
+⏳ Auto-sourcing of reference links (planned)  
 
 ---
 
 ## Tech Stack
 
-| Tool        | Purpose                         |
-|-------------|----------------------------------|
-| Python 3.13 | Core language                    |
-| OpenAI API  | Text generation                  |
-| PyYAML      | YAML integration                 |
-| Schedule    | Timed task execution             |
-| dotenv      | API key handling                 |
+
+| Tool         | Purpose                          |
+|--------------|----------------------------------|
+| Python 3.11  | Core language                    |
+| OpenAI GPT-4 | Text generation                  |
+| PyYAML       | YAML integration                 |
+| Cron         | Scheduled post execution         |
+| GitHub       | Version control                  |
+| Notion       | Project management (optional)    |
 
 ---
 
 ## Demo
 
-The following GIF demonstrates how a YAML-based topic is converted into Markdown text and saved locally.
-
-📍 *Output directory: `posts/` + logs in `logs/`*
+The following GIF demonstrates the full pipeline in action:  
+From selecting a YAML topic to generating a GPT-4-based post and saving it as Markdown in the output folder.
 
 ![Demo Animation](docs/demo.gif)
 
@@ -50,13 +67,12 @@ The following GIF demonstrates how a YAML-based topic is converted into Markdown
 
 ## Motivation & Inspiration
 
-As artificial intelligence increasingly makes critical decisions, it's essential not to overlook the **ethical questions**.
+As AI systems increasingly influence social, economic, and political realities, it's crucial to embed ethics into the development pipeline.  
+This agent was built to:
 
-This project was born from a desire to contribute by:
-
-- **Raising visibility** for bias & fairness in LLMs  
-- **Automating education** on topics that often stay in the shadow of technical hype  
-- **Promoting responsible AI systems** that include rather than exclude people
+- Make bias and fairness in LLMs more visible  
+- Automate education on overlooked but critical topics  
+- Support responsible AI communication in public discourse
 
 `ethical_ai_post_agent` is my way of using technology to bring **awareness, reflection, and change** into the feed.
 
@@ -90,16 +106,18 @@ ethical_ai_post_agent/
 
 ## To Do
 - [x] Connect GPT-4 for generation
-- [ ] Add LinkedIn scheduling (via API)
-- [ ] Integrate DALL·E for visual content
-- [ ] Web dashboard (optional)
-- [ ] Post-validation with regex / review
+- [ ] Finalize LinkedIn API integration (read/write to company pages)
+- [ ] Implement fallback post queue
+- [ ] Add auto-screenshot of generated posts for documentation
+- [ ] Build minimal frontend CLI interface
+- [ ] Improve link recommendation with curated database
+- [ ] Community Mode: Support multiple contributors
 
 ---
 
 ## License
 
-MIT License – Use responsibly.  
+This project is part of the **FemAI Community** and will be released under an open-source license once core functionality is stable.
 Don't build disinfo-bots 🙏
 
 ---
@@ -108,4 +126,4 @@ Don't build disinfo-bots 🙏
 
 Made with ❤️ by [shinan.dev](https://github.com/shinanDev)  
 GPG-signed & committed.  
-Ambassador for Ethical AI
+Ambassador for Ethical AI — always open for feedback and collaboration.
