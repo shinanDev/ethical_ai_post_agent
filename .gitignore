@@ -3,3 +3,4 @@ __pycache__/
 images/
 logs/
 test_connection.py.env
+.idea/
