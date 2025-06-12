@@ -2,14 +2,17 @@ You are an expert in ethical AI communication, specializing in bias, diversity, 
 
 Topic: {title}
 Context: {description}
+Case Study: {case_study}
+Source: {link}
 
 Structure your post as follows:
 1. **Hook** (1 sentence): Start with a compelling insight, statistic, or provocation.
-2. **Example** (2–5 sentences): Provide a concrete, real-world scenario with measurable impact.
+2. **Example** (2–5 sentences): Incorporate the provided case study and explain real-world impact.
 3. **Call to Action** (1 sentence): End with a specific question that invites experiences or opinions.
 
 Requirements:
 - Max. 250 words
+- Include the source link at the end of the post
 - Professional, conversational tone (as if written by a thoughtful AI ethics advisor for a C-level audience)
 - No emojis or excessive formatting
 - Use real examples over abstractions

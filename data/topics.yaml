@@ -1,43 +1,109 @@
-- title: "Gender Bias in AI"
-  description: "LLMs may reinforce outdated gender stereotypes."
-  case_study: "Male profiles more likely suggest 'CEO', female profiles 'nurse'."
-  link: "https://www.example.org/gender-bias"
+- title: "Bias in Nephrology AI Tools"
+  description: "ChatGPT-4 exhibits biased medical recommendations based on race, gender, and age."
+  case_study: "A 2025 study showed disparities in treatment suggestions across demographic profiles."
+  link: "https://www.frontiersin.org/articles/10.3389/frai.2025.1525937"
   hashtags:
-    - "#AIethics"
-    - "#GenderBias"
-    - "#FairnessInAI"
-  image_prompt: "A robot assigning stereotypical job roles based on gender"
+    - "#HealthcareAI"
+    - "#BiasDetection"
+    - "#AIinMedicine"
+  image_prompt: "An AI interface giving different medical diagnoses to diverse patients"
   content: |
-    LLMs must be evaluated for gender fairness. 
-    Let's raise awareness about biases and work toward inclusive AI.
+    Large language models are increasingly used in healthcare decision-making. But biases in medical AI can perpetuate inequalities and misdiagnosis.
+    
+    Key findings:
+    - ChatGPT-4 recommended different actions for identical symptoms based on patient demographics.
+    - Racial and age-related discrepancies were especially prominent.
+    
+    As AI becomes a medical tool, we must demand transparency, representative datasets, and continuous auditing.
 
-- title: "Racial Bias in Predictive Policing"
-  description: "AI trained on historical data may amplify racial profiling."
-  case_study: "Predictive policing flagged people of color at higher risk."
-  link: "https://www.example.org/racial-bias"
-  hashtags:
-    - "#ResponsibleAI"
-    - "#BiasInAI"
-    - "#AIJustice"
-  image_prompt: "A predictive map showing racial bias in risk zones"
-  content: |
-    Algorithms in law enforcement must be transparent and just.
-    We need fairness audits and community oversight.
+---
 
-- title: "Algorithmic Fairness in Recruitment"
-  description: "Bias in AI recruitment tools can lead to unfair hiring decisions."
-  case_study: "AI screening systems have been shown to prefer certain demographic traits over others."
-  link: "https://www.example.org/ai-hiring-bias"
+- title: "Adultification Bias in Generative AI"
+  description: "Black girls are depicted as older and more sexualized in AI-generated images."
+  case_study: "A 2025 paper revealed systemic bias in popular text-to-image models."
+  link: "https://arxiv.org/abs/2506.07282"
   hashtags:
-    - "#FairHiring"
-    - "#AIEthics"
-    - "#InclusiveTech"
-  image_prompt: "An abstract AI hiring dashboard with diverse candidate profiles equally highlighted"
+    - "#GenerativeAI"
+    - "#RepresentationMatters"
+    - "#EthicalAI"
+  image_prompt: "Side-by-side AI portraits of young girls with contrasting racial features"
   content: |
-    Algorithmic hiring tools are increasingly used in recruitment processes.
-    But without oversight, these systems can unintentionally favor or exclude candidates based on biased data.
-    To promote fairness:
-     - Evaluate datasets for representation across demographics.
-     - Regularly audit hiring algorithms for bias.
-     - Ensure human oversight in final decisions.
-    What best practices are you seeing in AI-based hiring systems?
+    Adultification bias is not just human—it’s embedded in generative AI.
+    
+    This form of bias makes Black girls appear older and overly mature, reinforcing harmful stereotypes.
+    
+    We need stronger ethical review processes for datasets, and community involvement to guide safe deployments.
+
+---
+
+- title: "Bias in Open-Source Text-to-Image Models"
+  description: "Over 100 generative models show consistent style and cultural biases."
+  case_study: "HuggingFace analysis found visual stereotypes across open AI image tools."
+  link: "https://arxiv.org/abs/2503.08012"
+  hashtags:
+    - "#OpenSourceAI"
+    - "#VisualBias"
+    - "#CulturalInclusion"
+  image_prompt: "Generated images of the same job title with varied cultural styles"
+  content: |
+    Open-source models are not immune to bias.
+    
+    Researchers analyzed 100+ models and found visual outputs that favored Eurocentric features and aesthetics.
+    
+    To democratize AI, we must include global perspectives in training data and community evaluation.
+
+---
+
+- title: "Overconfidence & Heuristics in LLMs"
+  description: "AI models mimic cognitive biases like overconfidence and confirmation bias."
+  case_study: "A 2025 study compared LLM behavior with classic human decision traps."
+  link: "https://www.livescience.com/technology/artificial-intelligence/ai-is-just-as-overconfident-and-biased-as-humans-can-be-study-shows"
+  hashtags:
+    - "#LLMBias"
+    - "#CognitiveBias"
+    - "#TrustworthyAI"
+  image_prompt: "An LLM outputing overly confident answers next to a confused user"
+  content: |
+    Language models don’t just learn language—they learn our flaws.
+    
+    From overconfidence to confirmation bias, LLMs often mirror human heuristics in their responses.
+    
+    We must teach developers and users alike to recognize and mitigate these machine-amplified tendencies.
+
+---
+
+- title: "Bias in AI-Powered Welfare Screening"
+  description: "UK benefit system AI discriminated based on age and immigration status."
+  case_study: "The Guardian revealed systemic bias in public sector algorithms."
+  link: "https://www.theguardian.com/society/2024/dec/06/revealed-bias-found-in-ai-system-used-to-detect-uk-benefits"
+  hashtags:
+    - "#PublicSectorAI"
+    - "#SocialJusticeTech"
+    - "#AlgorithmicBias"
+  image_prompt: "An algorithm denying aid to diverse profiles in a UI simulation"
+  content: |
+    Bias in public systems affects lives.
+    
+    A UK welfare AI was found to flag immigrants and elderly people more often—raising concerns about algorithmic profiling.
+    
+    Democratic AI governance starts with transparency and public accountability.
+
+---
+
+- title: "Bias Mitigation in Financial AI"
+  description: "UK’s FCA releases bias audits for AI systems used in finance."
+  case_study: "FCA’s 2025 note highlights audit techniques to detect and reduce financial discrimination."
+  link: "https://www.regulationtomorrow.com/eu/fca-publishes-second-research-note-on-bias-in-ai"
+  hashtags:
+    - "#FinTechAI"
+    - "#FairFinance"
+    - "#AIAudit"
+  image_prompt: "A financial dashboard with fairness alerts and demographic balance indicators"
+  content: |
+    In finance, biased AI can mean unfair loans or skewed credit scoring.
+    
+    The UK Financial Conduct Authority is tackling this head-on with practical audit techniques.
+    
+    Compliance isn't enough—ethical finance must be proactive, explainable, and inclusive.
+
+---
