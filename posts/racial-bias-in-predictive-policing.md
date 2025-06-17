@@ -1,5 +1,0 @@
-Did you know that predictive policing algorithms, when trained on historical data, can inadvertently amplify racial bias? 
-
-Take, for instance, the city of Oakland, California. In 2016, the Human Rights Data Analysis Group found that predictive policing software, trained on historically biased police data, sent officers to predominantly black and brown neighborhoods twice as often as other areas. Despite crime rates not being significantly higher in these neighborhoods, a biased feedback loop was created, with police presence leading to more recorded crime, which in turn influenced the algorithm's future predictions. 
-
-As we integrate AI into societal systems, we must remain vigilant about such unintended consequences. How are you ensuring that the AI systems your organization deploys don't reproduce or amplify existing biases? Let's discuss ways to audit our AI systems for fairness and inclusivity, and share best practices to mitigate bias in AI-driven decision-making.
