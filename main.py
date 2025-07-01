@@ -23,6 +23,9 @@ POST_DIR.mkdir(exist_ok=True)
 TOPIC_FILE = "data/topics.yaml"
 PROMPT_FILE = "prompts/post_prompt.txt"
 
+# LinkedIn Organization URN for publishing
+LINKEDIN_ORGANIZATION_URN = "urn:li:organization:91687641"
+
 # Load YAML topics
 def load_topics(filepath=TOPIC_FILE):
     try:

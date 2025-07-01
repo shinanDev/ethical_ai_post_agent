@@ -7,17 +7,14 @@ load_dotenv()
 ACCESS_TOKEN = os.getenv("LINKEDIN_ACCESS_TOKEN")
 ORGANIZATION_URN = "urn:li:organization:91687641"
 
-# Beispielinhalt (kann später durch generierten Text ersetzt werden)
-content = "🧠 Ethical AI Update: Our agent is now live and testing its first automated LinkedIn post! Stay tuned for more insights every Wednesday. #EthicalAI #AIForGood #FemAI"
-
-# Post-Datenstruktur
+# Test-Nachricht
 post_data = {
     "author": ORGANIZATION_URN,
     "lifecycleState": "PUBLISHED",
     "specificContent": {
         "com.linkedin.ugc.ShareContent": {
             "shareCommentary": {
-                "text": content
+                "text": "Hello LinkedIn! This is a test post from the Ethical AI Agent 🧪"
             },
             "shareMediaCategory": "NONE"
         }
@@ -33,7 +30,6 @@ headers = {
     "Content-Type": "application/json"
 }
 
-# Anfrage senden
 response = requests.post(
     "https://api.linkedin.com/v2/ugcPosts",
     headers=headers,
