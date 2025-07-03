@@ -1,12 +1,18 @@
+# Bytecode & Cache
 __pycache__/
+
+# Output folders
 images/
 logs/
+
+# Test scripts
 test_connection.py
 old_main.py
+
+# IDE / OS files
 .idea/
 .DS_Store
-.env
-logs/
+
 # Secrets
 *.env
 *access_token*.py
