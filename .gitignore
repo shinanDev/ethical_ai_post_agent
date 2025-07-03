@@ -2,6 +2,7 @@ __pycache__/
 images/
 logs/
 test_connection.py
+old_main.py
 .idea/
 .DS_Store
 .env
