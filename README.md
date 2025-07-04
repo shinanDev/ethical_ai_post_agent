@@ -124,10 +124,10 @@ ethical_ai_post_agent/
 - [x] Connect GPT-4 for generation
 - [x] APScheduler Automation
 - [x] Demo GIF Integration
-- [ ] Finalize LinkedIn API integration (read/write to company pages)
+- [ ] Finalize LinkedIn API integration (read/write to company page)
 - [ ] Implement fallback post queue
 - [ ] Build minimal frontend CLI interface
-- [ ] Improve link recommendation with curated database
+- [x] Improve link recommendation with curated database
 
 ---
 
