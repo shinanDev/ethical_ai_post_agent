@@ -8,6 +8,4 @@ As AI practitioners, tech leaders, and stakeholders in responsible innovation, w
 
 Source: https://www.frontiersin.org/articles/10.3389/frai.2025.1525937
 
-Source: https://www.frontiersin.org/articles/10.3389/frai.2025.1525937
-
 #HealthcareAI #BiasDetection #AIinMedicine
