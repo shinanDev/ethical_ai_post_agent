@@ -129,26 +129,26 @@ This agent was built to:
 
 ```
 ethical_ai_post_agent/
-├── data/                      # YAML input topics
+├── data/                        # YAML input topics
 │   └── topics.yaml
-├── posts/                     # Generated posts (.md)
-├── prompts/                   # Prompt templates (e.g. post_prompt.txt)
-├── docs/                      # Demo GIFs, documentation assets
+├── posts/                       # Generated posts (.md)
+├── prompts/                     # Prompt templates (e.g. post_prompt.txt)
+├── docs/                        # Demo GIFs, documentation assets
 │   └── demo.gif
-├── logs/                      # Logs (optional)
-├── venv/                      # Python virtual environment (excluded)
-├── main.py                    # Core agent logic
-├── scheduler.py               # Weekly post automation with APScheduler
-├── publish_post.py            # Placeholder for LinkedIn API post
-├── get_access_token.py        # LinkedIn API token handler
-├── get_organisation_urn.py    # Fetch organisation URN from LinkedIn
-├── linkedin_callback.py       # Handles LinkedIn OAuth callback (WIP)
-├── test_connection.py         # API key test script
-├── config.yaml                # Global parameters & settings
-├── .env                       # API key (excluded via .gitignore)
-├── README.md                  # Project documentation
-├── requirements.txt           # Python dependencies
-└── old_main.py                # Backup of previous `main.py` version
+├── images/                      # Optional image assets (used in posts)
+├── logs/                        # Logs (optional, .gitignored)
+├── main.py                      # Core agent logic
+├── scheduler.py                 # Weekly post automation with APScheduler
+├── publish_post.py              # Main call for scheduled publishing
+├── post_to_linkedin.py          # LinkedIn API wrapper (production)
+├── get_access_token.py          # LinkedIn token retrieval (deprecated)
+├── get_organisation_urn.py      # Fetch organisation URN from LinkedIn
+├── linkedin_callback.py         # Handles OAuth callback (optional)
+├── test_connection.py           # API key test script (deprecated)
+├── config.yaml                  # Global parameters & settings
+├── README.md                    # Project documentation
+├── requirements.txt             # Python dependencies
+└── .gitignore                   # Excludes secrets, cache, test, logs etc.
 ```
 </pre>
 
