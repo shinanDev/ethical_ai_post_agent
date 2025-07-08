@@ -8,6 +8,7 @@ logs/
 # Test scripts
 test_connection.py
 old_main.py
+old_README.md
 
 # IDE / OS files
 .idea/
