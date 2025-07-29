@@ -1,10 +1,6 @@
-Did you know your AI-powered nephrology tool could be making biased treatment recommendations? A significant 2025 study revealed that ChatGPT-4, a large language model extensively used in the medical field, exhibited disparities in its treatment suggestions, influenced by factors like race, gender, and age. 
+As we accelerate into the era of AI, it's pivotal to remember that the models we build reflect the biases embedded in the data they learn from. A 2025 study involving ChatGPT-4, an AI tool commonly used in Nephrology, brought this issue into sharp focus. The study revealed significant disparities in treatment suggestions, with the AI showing bias based on race, gender, and age. The real-world impact of such biases is far-reaching, potentially influencing clinicians' decisions and thus patient outcomes. As AI practitioners and tech leaders, we must recognize and address these biases for the sake of fairness, equity, and the very credibility of our field.
 
-Imagine a world where your diagnosis and treatment trajectory are influenced by your demographic profile rather than your unique medical condition. This isn't a hypothetical scenario — it's happening now, and it's a pressing issue we need to address. The impact is real, and it's affecting patient care outcomes across the globe.
-
-We, as AI practitioners and tech leaders, must take immediate action to rectify this bias. But it's not just about identifying and correcting the problem; it's about building AI systems that are inclusive and fair from the ground up. 
-
-So, I pose this question to you: How are you ensuring that your AI tools are free from bias and are promoting diversity and inclusion? Share your strategies and let's learn from each other.
+How can we better leverage diversity and inclusion principles to mitigate these biases in our AI models? Your experiences and insights are invaluable.
 
 Source: https://www.frontiersin.org/articles/10.3389/frai.2025.1525937
 
