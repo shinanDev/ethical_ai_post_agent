@@ -5,7 +5,7 @@ import logging
 # Logging zur Fehlerdiagnose
 logging.basicConfig(level=logging.INFO)
 
-# Funktion, die dein Posting-Skript startet
+# Funktion, die das Posting-Skript startet
 def run_post_script():
     logging.info("Starte publish_post.py...")
     try:

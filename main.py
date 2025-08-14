@@ -84,7 +84,7 @@ def main():
         print("[X] No topics found.")
         return
 
-    # 👉 Nur ein Topic pro Lauf – z. B. das erste
+    # Nur ein Topic pro Lauf – z. B. das erste
     topic = topics[0]
     if isinstance(topic, list):
         topic = topic[0]

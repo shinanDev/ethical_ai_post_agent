@@ -9,7 +9,7 @@ class CallbackHandler(BaseHTTPRequestHandler):
         auth_code = params.get('code', [None])[0]
 
         if auth_code:
-            print(f"\n🔐 Authorization Code erhalten:\n{auth_code}\n")
+            print(f"\nAuthorization Code erhalten:\n{auth_code}\n")
             message = "Authorization successful. You can close this window."
         else:
             message = "No code received."
@@ -21,7 +21,7 @@ class CallbackHandler(BaseHTTPRequestHandler):
 def run(server_class=HTTPServer, handler_class=CallbackHandler):
     server_address = ('', 3000)
     httpd = server_class(server_address, handler_class)
-    print("🚀 Callback-Server läuft unter http://localhost:3000 ...")
+    print("Callback-Server läuft unter http://localhost:3000 ...")
     httpd.serve_forever()
 
 if __name__ == '__main__':

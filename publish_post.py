@@ -7,9 +7,9 @@ import time
 load_dotenv()
 
 LINKEDIN_ACCESS_TOKEN = os.getenv("LINKEDIN_ACCESS_TOKEN")
-ORGANIZATION_URN = os.getenv("LINKEDIN_ORGANIZATION_URN")  # Beispiel: urn:li:organization:12345678
+ORGANIZATION_URN = os.getenv("LINKEDIN_ORGANIZATION_URN")
 
-# Lese den generierten Beitrag (z. B. aus Markdown-Datei)
+# Lese den generierten Beitrag aus der Markdown-Datei
 def load_post_text(filepath):
     try:
         with open(filepath, "r") as f:
