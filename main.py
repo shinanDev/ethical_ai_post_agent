@@ -8,7 +8,16 @@ from openai import OpenAI
 
 # Load API key
 load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+# Validate API key
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if not OPENAI_API_KEY:
+    raise ValueError("OPENAI_API_KEY not found in .env file. Please add your OpenAI API key.")
+
+client = OpenAI(api_key=OPENAI_API_KEY)
+
+# Ensure logs directory exists
+Path("logs").mkdir(exist_ok=True)
 
 # Logging configuration
 logging.basicConfig(
@@ -77,14 +86,14 @@ def save_post_to_file(topic, content):
 
 # Main execution
 def main():
-    topics = load_topics()  # <- lädt Liste via safe_load_all()
+    topics = load_topics()  # <- load list via safe_load_all()
     prompt_template = load_prompt()
 
     if not topics:
         print("[X] No topics found.")
         return
 
-    # Nur ein Topic pro Lauf – z. B. das erste
+    # just one Topic each run – z. B. first
     topic = topics[0]
     if isinstance(topic, list):
         topic = topic[0]

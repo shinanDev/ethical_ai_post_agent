@@ -1,15 +1,16 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
 import subprocess
 import logging
+import sys
 
 # Logging zur Fehlerdiagnose
 logging.basicConfig(level=logging.INFO)
 
 # Funktion, die das Posting-Skript startet
 def run_post_script():
-    logging.info("Starte publish_post.py...")
+    logging.info("Start publish_post.py...")
     try:
-        subprocess.run(["python3", "publish_post.py"], check=True)
+        subprocess.run([sys.executable, "publish_post.py"], check=True)
     except subprocess.CalledProcessError as e:
         logging.error(f"Fehler beim Ausführen von publish_post.py: {e}")
 

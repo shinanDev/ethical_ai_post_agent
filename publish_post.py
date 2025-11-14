@@ -1,13 +1,32 @@
 import os
 import requests
 from dotenv import load_dotenv
-import schedule
-import time
+from pathlib import Path
 
 load_dotenv()
 
+# Validate environment variables
 LINKEDIN_ACCESS_TOKEN = os.getenv("LINKEDIN_ACCESS_TOKEN")
 ORGANIZATION_URN = os.getenv("LINKEDIN_ORGANIZATION_URN")
+
+if not LINKEDIN_ACCESS_TOKEN:
+    raise ValueError("LINKEDIN_ACCESS_TOKEN not found in .env file. Please add your LinkedIn access token.")
+if not ORGANIZATION_URN:
+    raise ValueError("LINKEDIN_ORGANIZATION_URN not found in .env file. Please add your organization URN.")
+
+# Get the most recent post file from the posts directory
+def get_latest_post_file():
+    posts_dir = Path("posts")
+    if not posts_dir.exists():
+        raise FileNotFoundError("Posts directory does not exist.")
+
+    # Get all .md files sorted by modification time (most recent first)
+    post_files = sorted(posts_dir.glob("*.md"), key=lambda p: p.stat().st_mtime, reverse=True)
+
+    if not post_files:
+        raise FileNotFoundError("No post files found in posts directory.")
+
+    return post_files[0]
 
 # Lese den generierten Beitrag aus der Markdown-Datei
 def load_post_text(filepath):
@@ -53,22 +72,12 @@ def publish_to_linkedin(post_text):
         print(response.text)
 
 if __name__ == "__main__":
-    # post_path = "posts/next_post.md"
-    # post_content = load_post_text(post_path)
-    # if post_content:
-    #     publish_to_linkedin(post_content)
-
-    def scheduled_job():
-        post_path = "posts/next_post.md"
+    # Execute once - this script is called by scheduler.py
+    try:
+        post_path = get_latest_post_file()
+        print(f"[INFO] Publishing post from: {post_path}")
         post_content = load_post_text(post_path)
         if post_content:
             publish_to_linkedin(post_content)
-
-    # Plane wöchentliche Veröffentlichung: jeden Mittwoch um 13:00 Uhr
-    schedule.every().wednesday.at("13:00").do(scheduled_job)
-
-    print("[INFO] Scheduler aktiviert. Warte auf nächsten Termin...")
-
-    while True:
-        schedule.run_pending()
-        time.sleep(60)
+    except Exception as e:
+        print(f"[X] Error publishing post: {e}")
