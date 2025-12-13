@@ -103,7 +103,14 @@ def main():
 
     print("\nIMAGE PROMPT:", topic.get("image_prompt", "(no prompt defined)"))
 
-    filled_prompt = prompt_template.format(**topic)
+    # Safely fill the template even if some topic fields are missing
+    filled_prompt = prompt_template.format(
+        title=topic.get("title", "(no title provided)"),
+        description=topic.get("description", "(no description provided)"),
+        case_study=topic.get("case_study", "(no case study provided)"),
+        link=topic.get("link", "(no link provided)")
+    )
+
     if topic.get("case_study") and topic.get("link"):
         filled_prompt += f"\n\nCase Study: {topic['case_study']}\nSource: {topic['link']}"
     print("\nGENERATED PROMPT:\n")
